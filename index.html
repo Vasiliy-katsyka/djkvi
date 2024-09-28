@@ -4,11 +4,10 @@
   <meta charset="UTF-8">
   <title>DJ KVI - Last Thing I See</title>
   <style>
-  
     * {
       -webkit-tap-highlight-color: transparent;
     }
-    
+
     body {
       font-family: sans-serif;
       display: flex;
@@ -18,7 +17,8 @@
       background-image: url(https://i.ibb.co/JrYDqF1/2024-09-15-T21-03-03-703-Z2024-09-15-T21-03-03-703-Zf50acd7953aa0cb0ad8e018542541c58-1.jpg);
       background-size: cover;
       background-position: center;
-      background-repeat: no-repeat;   
+      background-repeat: no-repeat; 
+      margin: 0; /* Remove default body margins */
     }
 
     .container {
@@ -26,9 +26,9 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       overflow: hidden;
-      width: 300px;
-      /* Add z-index to make sure container appears above the blurred background */
-      z-index: 1; 
+      width: 80vw; /* Use viewport width for responsiveness */
+      max-width: 350px; /* Limit the maximum width as needed */
+      z-index: 1;
     }
 
     .cover {
