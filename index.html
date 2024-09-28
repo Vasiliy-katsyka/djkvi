@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>DJ KVI - Last Thing I See</title>
+  <style>
+  
+    * {
+      -webkit-tap-highlight-color: transparent;
+    }
+    
+    body {
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-image: url(https://i.ibb.co/JrYDqF1/2024-09-15-T21-03-03-703-Z2024-09-15-T21-03-03-703-Zf50acd7953aa0cb0ad8e018542541c58-1.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;   
+    }
+
+    .container {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 300px;
+      /* Add z-index to make sure container appears above the blurred background */
+      z-index: 1; 
+    }
+
+    .cover {
+      height: 300px;
+      background-image: url("https://unchainedmusic.s3.us-west-1.wasabisys.com/65d9e0af2b0820c1533d8c7a/release/66e74b75dd3c121dd4a1f7a8/ReleasePreviewCover/2024-09-15T21%3A03%3A03.703Z2024-09-15T21%3A03%3A03.703Zf50acd7953aa0cb0ad8e018542541c58.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .header {
+      position: relative;
+      height: 15px;
+    }
+    
+    h3 {
+      color: #888;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    .header::before {
+      /* Remove the background properties here */
+      content: "";
+      filter: blur(5px);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .header .play-button {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(255,255,255,0.8);
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    .header .play-button i {
+      font-size: 24px;
+      color: #333;
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .music-service {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: 1px solid #eee;
+      border-radius: 5px;
+    }
+    
+    .music-service:hover {
+      background-color: #ececec;
+    }
+
+    .music-service img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    .music-service button {
+      background-color: #dedede;
+      color: black;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    
+    .music-service button:hover {
+      background-color: #b8b8b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="bg-image"></div>
+  <div class="container">
+    <div class="cover"></div> 
+    <div class="header">
+      <div class="play-button">
+        <i class="fas fa-play"></i>
+      </div>
+    </div>
+    <div class="content">
+      <h2>DJ KVI - Last Thing I See</h2>
+      <h3>Choose music service</h3>
+      <div class="music-service">
+        <img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_Green.png" alt="Spotify">
+        <span>Spotify</span>
+        <button onclick="window.location.href='https://example.com'">Play</button> 
+      </div>
+      <div class="music-service">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Apple_Music_icon.svg" alt="Apple Music">
+        <span>Apple Music</span>
+        <button onclick="window.location.href='https://example.com'">Play</button> 
+      </div>
+      <div class="music-service">
+        <img src="https://img.icons8.com/ios_filled/512/amazon-music.png" alt="Amazon Music">
+        <span>Amazon Music</span>
+        <button onclick="window.location.href='https://example.com'">Play</button> 
+      </div>
+      <div class="music-service">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToCiwlnI6TZrNzwZbKcZ9XzgFZTcRNehA1BQ&s" alt="YouTube">
+        <span>YouTube Music</span>
+        <button onclick="window.location.href='https://example.com'">Play</button> 
+      </div>
+      <div class="music-service">
+        <img src="https://st-aug.edu/wp-content/uploads/2021/09/soundcloud-logo-soundcloud-icon-transparent-png-1.png" alt="SoundCloud">
+        <span>SoundCloud</span>
+        <button onclick="window.location.href='https://example.com'">Play</button> 
+      </div>
+      <div class="music-service">
+        <img src="https://simonhudson.com.au/wp-content/uploads/2020/05/133-1336160_tidal-icon-listen-on-tidal-logo-hd-png.png" alt="Tidal">
+        <span>Tidal</span>
+        <button onclick="window.location.href='https://example.com'">Play</button> 
+      </div>
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js"></script>
+</body>
+</html>
